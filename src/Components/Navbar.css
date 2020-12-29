@@ -8,9 +8,15 @@
 
 .brand-logo {
     /* margin-right: 20%; */
+    position: absolute;
+    left: 20px;
+    /* margin-left: 0.5rem; */
 }
 
 .menu {
+    position: absolute;
+    right: 175px;
+    /* margin-right: 11rem; */
     display: flex;
     align-items: center;
 }
@@ -31,6 +37,8 @@
 }
 
 .burger {
+    position: absolute;
+    right: 30px;
     display: none;
     width: auto;
     height: auto;
@@ -46,6 +54,13 @@
     margin-top: 2px;
 }
 
+.menu-open {
+    position: absolute;
+    right: 175px;
+    display: flex;
+    align-items: center;
+}
+
 @media screen and (max-width: 768px) {
     .brand-logo {}
     .burger {
@@ -56,9 +71,27 @@
         display: none;
     }
     .menu-open {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        height: 96.7%;
+        overflow-y: hidden;
         flex-direction: column;
+        border-left: 1px black solid;
+        padding-left: 20px;
+    }
+    .menu-li {
+        margin-left: 0;
+        margin-top: 40px;
+        list-style: none;
     }
 }
+
+/* @media screen and (min-width: 768px) {
+    .menu-open {
+        flex-direction: row;
+    }
+} */
 
 /* .NavbarItems {
     background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);

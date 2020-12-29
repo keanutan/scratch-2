@@ -9,12 +9,8 @@ class Navbar extends Component {
         windowSize: window.innerWidth
     };
 
-    handleBurgerClick = (burger, mobileWindow, windowSize) => {
-        if(state.burger) {
-            this.setState({ burger: true });
-        }
-        // burger = !burger;
-        // this.setState({ burger: !this.state.burger });
+    handleBurgerClick = () => {
+            this.setState({ burger: !this.state.burger });
     }
 
     render() {
@@ -22,7 +18,7 @@ class Navbar extends Component {
             <>
                 <nav className='NavbarItems'>
                     <h1 className='brand-logo'>Brand</h1>
-                    <ul className={(this.state.burger) ? 'menu-open' : 'menu' }>
+                    <ul className={(this.state.burger) ? 'menu-open' : 'menu'}>
                         {MenuItems.map((item, index) => {
                             return (
                                 <li className='menu-li' key={index}>
