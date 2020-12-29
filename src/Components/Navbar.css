@@ -1,7 +1,7 @@
 .NavbarItems {
-    display: block;
+    display: flex;
     height: 30px;
-    display: -webkit-flex;
+    display: -webkit-box;
     justify-content: center;
     align-items: center;
     border-bottom: 1px black solid;
