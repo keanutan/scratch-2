@@ -1,9 +1,10 @@
 .NavbarItems {
-    display: flex;
-    height: 30px;
     display: -webkit-box;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-align: center;
+    height: 30px;
+    /* display: block; */
+    /* justify-content: center; */
+    /* align-items: center; */
     border-bottom: 1px black solid;
 }
 
@@ -11,6 +12,8 @@
     /* margin-right: 20%; */
     position: absolute;
     left: 20px;
+    /* margin: auto; */
+    margin: auto;
     /* margin-left: 0.5rem; */
 }
 
@@ -20,6 +23,7 @@
     /* margin-right: 11rem; */
     display: flex;
     align-items: center;
+    margin: auto;
 }
 
 .menu-li {
