@@ -94,8 +94,64 @@ class FrontEnd extends Component {
                         <button>Register</button>
                     </div>
                 </div>
-                <div className='row'></div>
-                <div className='row'></div>
+                <div className='row'>
+                    <h3>Assign Professionals</h3>
+                    <div className='column'>
+                        <h4>Performer: </h4>
+                        <select>
+                            <option>Please select one</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                    <div className='column'>
+                        <h4>Event: </h4>
+                        <select>
+                            <option>Please select one</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                    <div className='column'>
+                        <h4>Assignment:</h4>
+                        <button>Assign</button>
+                    </div>
+                </div>
+                <div className='row'>
+                <h3>Pay for Registration with GooglePay</h3>
+                    <div className='column'>
+                        <h4>Person: </h4>
+                        <select>
+                            <option>Please select one</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                    <div className='column'>
+                        <h4>Event: </h4>
+                        <select>
+                            <option>Please select one</option>
+                            <option>B</option>
+                            <option>C</option>
+                        </select>
+                    </div>
+                    <div className='column'>
+                        <div className='Name'>
+                            <h4>Device ID: </h4>
+                            <input type='text' className='name-input' placeholder='ID'></input>
+                        </div>
+                    </div>
+                    <div className='column'>
+                        <div className='Name'>
+                            <h4>Amount</h4>
+                            <input type='text' className='name-input' placeholder='$$$'></input>
+                        </div>
+                    </div>
+                    <div className='column'>
+                        <h4>Payment:</h4>
+                        <button>Make Payment</button>
+                    </div>
+                </div>
             </>
         )
     }
